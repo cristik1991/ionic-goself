@@ -1,0 +1,81 @@
+<ion-view view-title="自己走"  hide-nav-bar="false">
+  <ion-view title="自己走">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-light"><li class="icon ion-ios-chatbubble-outline li-clear"></li></button>
+    </ion-nav-buttons>
+    <ion-content>
+      <div>
+        <div class="carousel">
+          <img ng-src="{{imageUrl}}">
+          <div>
+              <input type="text" name = "search" placeholder="国家\城市\景点" />
+              <label>全球超过150个国家都有我们的向导</label>
+              <span class="ion-search li-clear"/>
+          </div>
+        </div>
+
+        <div class="suggest-tab">
+          <div ng-class="{true: 'tab-active', false: ''}[visible]" ng-click="selectTab(1)">
+            推荐
+          </div>
+          <div ng-class="{true: '', false: 'tab-active'}[visible]" ng-click="selectTab(2)">
+            主题
+          </div>
+        </div>
+        <!-- 推荐列表 -->
+        <div  class="list card suggest-list" ng-show="visible">
+          
+          <div class="item item-image suggest">
+            <img src="{{imageUrl}}">
+            <div>
+              <div class="shadow"></div>
+              <div class="text-descripe">
+                <label>爱情海</label>
+                <div></div>
+                <label>The Aegean sea</label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item item-image suggest">
+            <img src="{{imageUrl}}">
+            <div>
+              <div class="shadow"></div>
+              <div class="text-descripe">
+                <label>爱情海</label>
+                <div></div>
+                <label>The Aegean sea</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-image suggest">
+            <img src="{{imageUrl}}">
+            <div>
+              <div class="shadow"></div>
+              <div class="text-descripe">
+                <label>爱情海</label>
+                <div></div>
+                <label>The Aegean sea</label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- 主题列表 -->
+        <div class="list card suggest-list" ng-hide="visible">
+          <div class="item item-image">
+            <div style="width:50%;float:left"><img ng-src="{{imageUrl}}" /></div>
+            <div style="position:absolute;width:50%;height:100%;background:#80DEE6;right:0">
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </ion-content>
+</ion-view>
+</ion-view>

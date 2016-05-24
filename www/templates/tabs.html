@@ -1,0 +1,40 @@
+<!-- <ion-tabs class="tabs-icon-top tabs-native">
+
+  <ion-tab title="目的地" icon-on="ion-earth" icon-off="ion-ios-paper" href="#/tab/destination/recommend">
+    <ion-nav-view name="destination-tab"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="攻略" icon="ion-ios-paper" href="#/tab/strategy">
+    <ion-nav-view name="strategy-tab"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="聊天" icon="ion-android-chat" href="#/tab/chat">
+    <ion-nav-view name="chat-tab"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="我的" icon="ion-ios-person" href="#/tab/myprofile">
+    <ion-nav-view name="myprofile-tab"></ion-nav-view>
+  </ion-tab>
+</ion-tabs> -->
+
+
+<div class="tabs tabs-icon-top" ng-controller="TabController">
+  <a class="tab-item {{tab0}}" href="#/tab/destination">
+    <i class="icon ion-home"></i>
+    目的地
+  </a>
+  <a class="tab-item {{tab1}}" href="#/tab/strategy">
+    <i class="icon ion-ios-paper"></i>
+    攻略
+  </a>
+  <a class="tab-item {{tab2}}" href="#/tab/chat">
+    <i class="icon ion-android-chat"></i>
+    聊天
+  </a>
+  <a class="tab-item {{tab3}}" href="#/tab/myprofile">
+    <i class="icon ion-ios-person"></i>
+    我的
+  </a>
+</div>
+<ion-nav-view name="main-tab"></ion-nav-view>
+

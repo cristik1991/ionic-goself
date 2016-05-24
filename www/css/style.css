@@ -1,0 +1,127 @@
+/* 头部 */
+.bar.bar-native{
+	border-color:#3EA6A5;
+	background-color:#3EA6A5;
+	background-image: linear-gradient(0deg, #3EA6A5, #50AFAF 50%, transparent 50%);
+	color:#fff;
+}
+.tabs-native>.tabs, .tabs.tabs-native{
+	border-color:#DFE0E0;
+	border-top:2px;
+	background-color:#FFFFFF;
+	background-image: linear-gradient(0deg, #DFE0E0, #FFFFFF 50%, transparent 50%);
+	color:#fff;
+}
+.nav-buttons-right-second{
+	position: relative;
+    right: 10px;
+}
+.tab-item{
+	color:#B5B5B6;
+}
+.li-clear{
+	list-style: none;
+}
+.bar .title{
+	font-size: 20px;
+}
+/* 导航栏 */
+.tabs .active{
+	color:#2ACCC7;
+}
+
+/* 轮播图 */
+.carousel img{
+	width:100%;
+	height:200px;
+}
+.carousel div{
+	position:absolute; 
+	top:40px;
+	left:15%; 
+	width:70%;
+	text-align:center;
+}
+.carousel div input{
+	width:100%;
+	overflow-x:visible;
+	overflow-y:visible;
+	background:#FFFFFF;
+	padding-left:35px;
+}
+.carousel div span{
+	position:relative;
+	left:-226px;top:-29px;
+	font-size:25px;
+	color:#CCCDCD;
+}
+.carousel div label{
+	color:white;
+}
+
+/* 推荐列表 */
+.suggest-tab{
+	color:#949393;
+	height:23px;
+}
+
+.suggest-tab div{
+	position:relative;
+	left:20%;
+	width:30%;
+	float:left;
+	text-align:center;
+} 
+
+.tab-active{
+	border-bottom:3px solid #45A9A8;
+	color:#45A9A8;
+}
+
+.suggest-list{
+	/* margin-top:0; */
+	margin:0;
+}
+
+.suggest{
+	margin-bottom:8px;
+}
+
+.suggest>div{
+	width:45%; 
+	height:80px;
+	top:50px;
+	position:absolute;
+	left:27.5%; 
+	z-index:10;
+} 
+
+.shadow {
+	position:absolute;
+	width:100%; 
+	height:100%;
+	background:black;
+	opacity:0.5;
+}
+
+.text-descripe{
+	position:absolute;
+	top:20%;
+	left:10%;
+	width:80%;
+}
+
+.text-descripe label{
+	color:white;
+	display:block;
+}
+
+.text-descripe>div{
+	height:1px;
+	width:100%;
+	background:white;
+	opacity:0.8;
+}
+
+
+
