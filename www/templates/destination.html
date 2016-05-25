@@ -1,4 +1,4 @@
-<ion-view view-title="自己走"  hide-nav-bar="false">
+
   <ion-view title="自己走">
     <ion-nav-buttons side="right">
         <button class="button button-clear button-light"><li class="icon ion-ios-chatbubble-outline li-clear"></li></button>
@@ -26,7 +26,7 @@
         <div  class="list card suggest-list" ng-show="visible">
           
           <div class="item item-image suggest">
-            <img src="{{imageUrl}}">
+            <a href="#/destinationdetail/1"><img ng-src="{{imageUrl}}"></a>
             <div>
               <div class="shadow"></div>
               <div class="text-descripe">
@@ -38,7 +38,7 @@
           </div>
           
           <div class="item item-image suggest">
-            <img src="{{imageUrl}}">
+            <a href="#/destinationdetail/2"><img ng-src="{{imageUrl}}"></a>
             <div>
               <div class="shadow"></div>
               <div class="text-descripe">
@@ -50,7 +50,7 @@
           </div>
 
           <div class="item item-image suggest">
-            <img src="{{imageUrl}}">
+            <a href="#/destinationdetail/3"><img ng-src="{{imageUrl}}"></a>
             <div>
               <div class="shadow"></div>
               <div class="text-descripe">
@@ -64,12 +64,40 @@
         </div>
         <!-- 主题列表 -->
         <div class="list card suggest-list" ng-hide="visible">
+
           <div class="item item-image">
-            <div style="width:50%;float:left"><img ng-src="{{imageUrl}}" /></div>
-            <div style="position:absolute;width:50%;height:100%;background:#80DEE6;right:0">
-              <span></span>
+            <div class="sight-left"><img ng-src="{{imageUrl}}" /></div>
+            <div>
+              <span>亲子游</span>
+              <span>6个景点推荐</span>
             </div>
           </div>
+
+          <div class="item item-image">
+            <div class="sight-right"><img ng-src="{{imageUrl}}" /></div>
+            <div>
+              <span>亲子游</span>
+              <span>6个景点推荐</span>
+            </div>
+          </div>
+
+          <div class="item item-image">
+            <div class="sight-left"><img ng-src="{{imageUrl}}" /></div>
+            <div>
+              <span>亲子游</span>
+              <span>6个景点推荐</span>
+            </div>
+          </div>
+
+          <div class="item item-image">
+            <div class="sight-right"><img ng-src="{{imageUrl}}" /></div>
+            <div>
+              <span>亲子游</span>
+              <span>6个景点推荐</span>
+            </div>
+          </div>
+
+
         </div>
 
 
@@ -77,5 +105,4 @@
       </div>
 
     </ion-content>
-</ion-view>
 </ion-view>

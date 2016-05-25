@@ -48,23 +48,13 @@ angular.module('goself.router', [])
                 }
               }
             })
-            /*其他路径*/
-            .state('tabs.destination.recommend',{
-              url:"/recommend",
-              views:{
-                'destination-select-tab':{
-                  templateUrl:"templates/recommend.html"
-                }
-              }
+            .state('destinationdetail',{
+              url:"/destinationdetail/:destinationId",
+              templateUrl:"templates/destinationdetail.html",
+              controller:"DestinationDetailCtrl"
             })
-            .state('tabs.destination.subject',{
-              url:"/subject",
-              views:{
-                'destination-select-tab':{
-                  templateUrl:"templates/subject.html"
-                }
-              }
-            })
-            ;
-            $urlRouterProvider.otherwise('tab/destination/recommend');
+            
+            $urlRouterProvider.otherwise('/tab/destination');
+
+            
     }])

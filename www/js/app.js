@@ -5,10 +5,8 @@ angular.module('ionicApp', ['ionic','goself.router','goself.controllers','goself
   $ionicConfigProvider.backButton.previousTitleText(false);
 
 
-  /*$scope.$on( "$ionicView.enter", function( scopes, states ) {
-        alert(11);
-    });*/
-  /*$ionicConfigProvider.platform.ios.tabs.style('standard');
+
+  $ionicConfigProvider.platform.ios.tabs.style('standard');
   $ionicConfigProvider.platform.ios.tabs.position('bottom');
   $ionicConfigProvider.platform.android.tabs.style('standard');
   $ionicConfigProvider.platform.android.tabs.position('bottom');
@@ -18,7 +16,7 @@ angular.module('ionicApp', ['ionic','goself.router','goself.controllers','goself
   $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-thin-left');
   $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-android-arrow-back');
   $ionicConfigProvider.platform.ios.views.transition('ios');
-  $ionicConfigProvider.platform.android.views.transition('android');*/
+  $ionicConfigProvider.platform.android.views.transition('android');
 
 
   
