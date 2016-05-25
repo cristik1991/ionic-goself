@@ -1,0 +1,70 @@
+<ion-view view-title="目的地详情">
+	<ion-nav-buttons side="right">
+		<button class="button button-clear button-light">
+			<li class="icon ion-share li-clear"></li>
+		</button>
+	</ion-nav-buttons>
+	<ion-content has-subheader="false">
+		<div class="head-image"><img ng-src="{{imageUrl}}"></div>
+
+		<div class="des-lab">
+			<div class="des-lab-left">
+				<li class="icon ion-ios-heart-outline li-clear" ></li>
+				<span>马尔代夫</span>
+			</div>
+			<div class="des-lab-right">
+				<span>5</span>
+				<span>游玩攻略</span>
+			</div>
+		</div>
+
+		<div class="des-tab">
+			<span class="des-tab-active">收费标准</span>
+			<span>游玩贴士</span>
+		</div>
+
+		<div class="fee-info" ng-show="visible">
+			<div class="fee-info-intro">
+					<span>￥140</span>
+					<span>/人</span>
+					<span>每天9小时</span>
+					<span>徒步游玩</span>
+			</div>
+			<div class="fee-info-intro">
+					<span>￥140</span>
+					<span>/人</span>
+					<span>每天9小时</span>
+					<span>徒步游玩</span>
+			</div>
+			<div class="fee-info-intro">
+					<span>￥140</span>
+					<span>/人</span>
+					<span>每天9小时</span>
+					<span>徒步游玩</span>
+			</div>
+			<div class="fee-info-intro">
+					<span>￥140</span>
+					<span>/人</span>
+					<span>每天9小时</span>
+					<span>徒步游玩</span>
+			</div>
+			<div class="fee-detail">查看详细收费标准</div>
+		</div>
+		<div ng-hide="visible">
+
+		</div>
+
+		<div class="des-spread">
+				<img ng-src="{{imageUrl}}"/>
+				<div></div>
+				<span>私人定制</span>
+				<span>把你的需求发给我们，我们会帮安排行程</span>
+		</div>
+		
+		<div class="list card">
+			
+		</div>
+
+
+	</ion-content>
+</ion-view>
